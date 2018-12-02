@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrehya.Resume.ResumeMainActivity"
+    android:background="@color/LanguageBG">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutLogged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp">
+
+        //USER INFO
+        <Button
+            android:id="@+id/btn_UserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //USER ACTIVITIES
+        <Button
+            android:id="@+id/btn_UserActs"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //Languages
+        <Button
+            android:id="@+id/btn_UserLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //Degrees
+        <Button
+        android:id="@+id/btn_UserDegrees"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Button"
+        android:background="@drawable/btn_resumeview"
+        android:textColor="@color/textColorBlack"
+        android:layout_margin="5dp"/>
+        //Jobexp
+        <Button
+            android:id="@+id/btn_UserJobexp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //USER BENEFITS
+        <Button
+            android:id="@+id/btn_UserBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //ABOUT ME USER
+        <Button
+            android:id="@+id/btn_UserAboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/textColorBlack"
+            android:layout_margin="5dp"/>
+        //SHOW
+
+        <Button
+            android:id="@+id/btn_ShowResume"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_btn_red"
+            android:text="Button"
+            android:textColor="@color/textColorWhite" />
+
+        //GET BACK BTN
+        <Button
+            android:id="@+id/btn_Back"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/back_btn_red"
+            android:textColor="@color/textColorWhite"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutNotlogged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtNotloggedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btn_gotologin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Button"
+            android:background="@drawable/btn_resumeview"
+            android:textColor="@color/my_blue1"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutspin_kit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.FoldingCube"
+            android:layout_width="54dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="200dp"
+            app:SpinKit_Color="@color/colorAccent" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

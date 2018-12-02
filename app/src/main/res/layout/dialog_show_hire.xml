@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgShwhireImg"
+            android:src="@drawable/ic_checkmark"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:text="نام شرکت"
+            android:id="@+id/txtCompanyName"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="40dp"
+            android:textSize="@dimen/textSize3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutdialog_show_hire"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/txtHireExplainShowhire"
+                android:text="توضیح کار..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutdialog_show_hire2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/txtJobTitleShowhire2"
+                android:textStyle="bold"
+                android:text="شغل مورد نظر: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/txtJobTitleShowhire"
+                android:text="گرافیست "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutdialog_show_hire3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/txtJobTimeShowhire2"
+                android:textStyle="bold"
+                android:text="وقت کاری: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/txtJobTimeShowhire"
+                android:text="تمام وقت"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutdialog_show_hire4"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/txtJobPlaceShowhire2"
+                android:textStyle="bold"
+                android:text="محل کار: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/txtJobPlaceShowhire"
+                android:text="تمام وقت"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@color/bottomNavSelectedBtnColor"
+            android:textColor="@color/textColorWhite"
+            android:textSize="15dp"
+            android:text="بستن"/>
+        <Button
+            android:id="@+id/btn_sendresume"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@color/flatButton"
+            android:textColor="@color/textColorWhite"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="ارسال رزومه"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

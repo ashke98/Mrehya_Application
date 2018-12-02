@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrehya.MoreFragment">
+    <RelativeLayout
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <com.mrehya.MyTextView
+            android:id="@+id/mytextMainMenu"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/textSize1"
+            android:text="منوی اصلی"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmoreresume"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageViewresume"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sakhteresum" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/Resumeshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="ساخت رزومه شخصی"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore2"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sherkatdarazmon" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnGoToExams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="شرکت در آزمون‌ها"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore3"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/natayejeazemon" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnExamResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="نتایج آزمون‌ها"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore4"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/foroshgahinterneti" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="فروشگاه اینترنتی"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore5"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/khadamatepezeshki" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnMedicalServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="خدمات پزشکی"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore6"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView6"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/tanzimat" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="تنظیمات"
+            android:textColor="@color/textColorBlack"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutmore7"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/imageView7"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/about" />
+        <Button
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/btnAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="درباره ما"
+            android:textColor="@color/textColorBlack"
+            />
+        <View
+            android:background="@color/textColorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <View
+        android:background="@color/textColorGrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

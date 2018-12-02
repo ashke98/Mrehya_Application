@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_language"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LanguageBG"
+    tools:context="com.mrehya.Language">
+    <LinearLayout
+        android:id="@+id/Connected"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/logo_persian"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="130dp" />
+        <com.mrehya.MyTextView
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/textSize1"
+            android:textColor="@color/textColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/textShadowColor"
+            android:shadowRadius="5"
+            android:shadowDy="5"
+            android:text="لطفا زبان مورد نظر خود را انتخاب نمایید."/>
+        <com.mrehya.MyTextView
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/textSize2"
+            android:textColor="@color/textColorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select your language"/>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp">
+            <ImageButton
+                android:id="@+id/imgBtnEnglish"
+                android:padding="4dp"
+                android:src="@drawable/uk_flag"
+                android:scaleType="fitXY"
+                android:background="@drawable/left_lang_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent" />
+            <Button
+                android:textSize="@dimen/textSize1"
+                android:id="@+id/btnEnglish"
+                android:text="English"
+                android:textAllCaps="false"
+                android:background="@drawable/right_lang_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp">
+            <ImageButton
+                android:id="@+id/imgBtnPersian"
+                android:padding="4dp"
+                android:src="@drawable/flag_of_iran"
+                android:scaleType="fitXY"
+                android:background="@drawable/left_lang_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:layout_height="match_parent" />
+            <Button
+                android:textAllCaps="false"
+                android:textSize="@dimen/textSize1"
+                android:id="@+id/btnPersian"
+                android:text="Persian"
+                android:background="@drawable/right_lang_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/DisConnected"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <com.mrehya.MyTextView
+            android:id="@+id/txtChecknet"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/textSize1"
+            android:textColor="@color/textColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/textShadowColor"
+            android:shadowRadius="5"
+            android:shadowDy="5"
+            android:text="ارتباط اینترنتی شما قطع می باشد"/>
+
+        <com.mrehya.MyTextView
+            android:id="@+id/txtChecknet2"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/textSize1"
+            android:textColor="@color/textColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/textShadowColor"
+            android:shadowRadius="5"
+            android:shadowDy="5"
+            android:text="Check Internet Connection"/>
+
+        <Button
+            android:id="@+id/btn_tryagain"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Try Again / تلاش مجدد"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@color/textColorWhite"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Wellcome"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:src="@drawable/logo_persian"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="130dp" />
+
+        <com.mrehya.MyTextView
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/textSize1"
+            android:textColor="@color/textColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/textShadowColor"
+            android:shadowRadius="5"
+            android:shadowDy="5"
+            android:text="به اپ احیا خوش آمدید"/>
+
+        <com.mrehya.MyTextView
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/textSize1"
+            android:textColor="@color/textColorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/textShadowColor"
+            android:shadowRadius="5"
+            android:shadowDy="5"
+            android:text="Welcome to MrEhya"/>
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.FoldingCube"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"/>
+
+    <com.mrehya.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="نسخه‌ی ۱.۳"
+        android:textColor="@color/textColorBlack"
+        android:textSize="@dimen/textSize1"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

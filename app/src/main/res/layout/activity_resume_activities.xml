@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:text="فعایت های کاربری"
+            android:id="@+id/txttitle"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="40dp"
+            android:textSize="@dimen/textSize3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutactivities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+
+                //skills _proes : Talents
+                <LinearLayout
+                    android:id="@+id/LinearLayoutresumeTalents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtTalents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textSize2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/textColorGrey" />
+
+                    <ListView
+                        android:id="@+id/listViewTalents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_margin="2dp"/>
+                    <ImageButton
+                        android:id="@+id/btnAddTalents"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+                //provinces : Provinces
+                <LinearLayout
+                    android:id="@+id/LinearLayoutresumeProvinces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtProvinces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textSize2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/textColorGrey" />
+
+                    <ListView
+                        android:id="@+id/listViewProvinces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_margin="2dp"/>
+                    <ImageButton
+                        android:id="@+id/btnAddProvinces"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+                //jobcats : Jobcats
+                <LinearLayout
+                    android:id="@+id/LinearLayoutresumeJobcats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtJobcats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textSize2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/textColorGrey" />
+
+                    <ListView
+                        android:id="@+id/listViewJobcats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_margin="2dp"/>
+                    <ImageButton
+                        android:id="@+id/btnAddJobcats"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+                //contracts : Contracts
+                <LinearLayout
+                    android:id="@+id/LinearLayoutresumeContracts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtContracts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textSize2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/textColorGrey" />
+
+                    <ListView
+                        android:id="@+id/listViewContracts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_margin="2dp"/>
+                    <ImageButton
+                        android:id="@+id/btnAddContracts"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+                //seniority : Seniority
+                <LinearLayout
+                    android:id="@+id/LinearLayoutresumeSeniority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtSeniority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/textSize2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/textColorGrey" />
+
+                    <ListView
+                        android:id="@+id/listViewSeniority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:layout_margin="2dp"/>
+                    <ImageButton
+                        android:id="@+id/btnAddSeniority"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add" />
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="@color/flatButton"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15dp"
+                android:text="برگشت"/>
+            <Button
+                android:id="@+id/btn_saveresume"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="#949494"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="ذخیره"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

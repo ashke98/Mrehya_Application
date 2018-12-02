@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">View Result</string>
+    <string name="action_play_next">مشاهده آزمون / Try Exam</string>
+    <string name="action_show_exam">مشاهده نتیجه / View Result</string>
+    <string name="backdrop_title">Try your self</string>
+    <string name="backdrop_subtitle">لیست آزمون ها</string>
+
+    <!--main activity-->
+    <string name="dashboard">Dashboard</string>
+    <string name="examnotfound">Exam not found</string>
+    <!--menu navigation xml-->
+    <string name="buttomNavHire">Hire</string>
+    <string name="buttomNavNuro">Neuro Marketing</string>
+    <string name="buttomNavDash">Dashboard</string>
+    <string name="buttomNavProf">Profile</string>
+    <string name="buttomNavMore">More</string>
+
+    <!--More Fragment-->
+    <string name="MainMenu">Main Menu</string>
+    <string name="MakeResume">Build Resume</string>
+    <string name="GoToExams">Contribute In Exams</string>
+    <string name="ExamResults">Exam Results</string>
+    <string name="Shop">Shop</string>
+    <string name="MedicalServices">Reserve</string>
+    <string name="Settings">Settings</string>
+    <string name="AboutUs">About us</string>
+
+    <!--Profile Fragment-->
+    <string name="profileType">Normal User</string>
+    <string name="UserInfo">User Info</string>
+    <string name="UserInfo2">Requests and Purchases</string>
+    <string name="SignInOrUp">Login / Register</string>
+    <string name="LogOut">Logout</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="showPurchases">show Purchases</string>
+    <string name="hireRequestStatus">Hire Request Status</string>
+    <string name="Instagram">Instagram</string>
+    <string name="Telegram">Telegram</string>
+
+    <!--Nuro Fragment-->
+    <string name="WhatIsNuro">What is NeuroMarketing? What is it for?</string>
+    <!--<string name="MainMenu">Telegram</string>-->
+    <string name="NuroExplain1">Tips of NeuroMarketing</string>
+    <string name="NuroExplain2">NeuroMarketing is place of shopping!</string>
+    <string name="NuroExplain3">Best place to sell and buy staff</string>
+    <string name="NuroExplain4">Join us ...</string>
+
+
+    <!--Hire Fragment-->
+    <string name="HirePerson">Hire Job Searcher</string>
+    <!--Hire Adapter-->
+    <string name="Hire">Hire</string>
+
+    <!--Dashboard Fragment-->
+    <string name="PsycoTest">Psycology Tests</string>
+    <string name="HireBestCompanies">Get Hired in Best Companies</string>
+    <string name="PsycoTests1">Addiction to ...</string>
+    <string name="PsycoTests2">Addiction to ...</string>
+    <string name="PsycoTests3">Addiction to ...</string>
+    <string name="PsycoTests4">Addiction to ...</string>
+    <string name="PsycoTests5">Addiction to ...</string>
+    <string name="PsycoTests6">Addiction to ...</string>
+
+
+    <!--Make Resume-->
+    <string name="JobTitle2">job title </string>
+    <string name="LastDegreeTitle">Educational certificate</string>
+    <string name="Edit">Edit</string>
+    <string name="PrivateInfo">Private Info</string>
+    <string name="EmailAddressTitle">Email Address </string>
+    <string name="PhoneTitle">Phone</string>
+    <string name="ProvinceResumeTitle">Location(Province) </string>
+    <string name="MarriageResumeTitle">marital status  </string>
+    <string name="GenderResumeTitle">Gender </string>
+    <string name="BirthYearResumeTitle">Year of Birth </string>
+    <string name="DutyResumeTitle">Military service status </string>
+    <string name="AddressResumeTitle">Address  </string>
+    <string name="Talents">Professional skills </string>
+    <string name="JobExp">work experience</string>
+    <string name="GraduateExp">Educational records</string>
+    <string name="Languages">languages</string>
+    <string name="JobFavorites">Job Interests</string>
+    <string name="SelectedProvinces">Desired provinces </string>
+    <string name="JobCategory">Job category and field of work</string>
+    <string name="AcceptedContract">The type of acceptable contracts</string>
+    <string name="ActivityLevel">Level of seniority in the field of activity</string>
+    <string name="ActualRights">Desired salary</string>
+    <string name="JobBenefits">The desired job benefits</string>
+    <string name="chkPromo">Possibility to promote the position</string>
+    <string name="chkInsur">Insurance</string>
+    <string name="chkTrainingCourse">Education Courses</string>
+    <string name="chkTransporting">Flexible working hours</string>
+    <string name="chkFood">Company responsible of food</string>
+    <string name="chkFlexiableHours">traffic Service</string>
+    <string name="SaveBenfits">Record Job Benefits</string>
+    <string name="AboutMe2">About Me</string>
+    <string name="AboutMe">About Me</string>
+    <string name="Salary">Salary</string>
+
+
+    <!--Medical Services-->
+    <!--<string name="MainMenu">Main Menu</string>-->
+    <string name="Onlineclinicbookkeeping">Online clinic book-keeping</string>
+    <string name="articles">Articles</string>
+    <string name="article">Article</string>
+
+    <!--Shop-->
+    <!--<string name="Shop">Shop</string>-->
+    <string name="product">Product</string>
+
+    <!--Choose Exam-->
+    <string name="Exams">Exams</string>
+    <string name="Minute">Minutes</string>
+    <string name="Question">Questions</string>
+    <string name="Exam">Exam</string>
+
+    <!--Login Or Signup-->
+    <string name="Login">Login</string>
+    <string name="Signup">Signup</string>
+    <string name="enterAsGuest">Get Back</string>
+
+    <!--Login-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="Password">Password</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="Submit">Submit</string>
+    <string name="LoginPage">Login Page</string>
+    <string name="PasswordAgain">Confirm Password</string>
+
+    <string name="title_activity_resume_build">ResumeBuildActivity</string>
+    <string name="title_resumemain_list">ResumeCols</string>
+    <string name="title_resumemain_detail">ResumeMain Detail</string>
+
+
+    <string name="app_name">Mrehya</string>
+        <string-array name="years">
+        <item>1397</item>
+        <item>1396</item>
+        <item>1395</item>
+        <item>1394</item>
+        <item>1393</item>
+        <item>1392</item>
+        <item>1391</item>
+        <item>1390</item>
+        <item>1389</item>
+        <item>1388</item>
+        <item>1387</item>
+        <item>1386</item>
+        <item>1385</item>
+        <item>1384</item>
+        <item>1383</item>
+        <item>1382</item>
+        <item>1381</item>
+        <item>1380</item>
+        <item>1379</item>
+        <item>1378</item>
+        <item>1377</item>
+        <item>1376</item>
+        <item>1375</item>
+        <item>1374</item>
+        <item>1373</item>
+        <item>1372</item>
+        <item>1371</item>
+        <item>1370</item>
+        <item>1369</item>
+        <item>1368</item>
+        <item>1367</item>
+        <item>1366</item>
+        <item>1365</item>
+        <item>1364</item>
+        <item>1363</item>
+        <item>1362</item>
+        <item>1361</item>
+        <item>1360</item>
+
+
+    </string-array>
+    <string-array name="langLevels">
+        <item>Amateur</item>
+        <item>Intermediate</item>
+        <item>Professional</item>
+        <item>Mother tongue</item>
+    </string-array>
+
+    <string-array name="langs">
+        <item>English</item>
+        <item>Persian</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string name="LastDegree">Last degree</string>
+    <string-array name="Province">
+        <item>East Azarbaijan</item>
+        <item>West Azarbaijan</item>
+        <item>Ardebil</item>
+        <item>Esfahan</item>
+        <item>Alborz</item>
+        <item>Ilam</item>
+        <item>Bushehr</item>
+        <item>Tehran</item>
+        <item> Chahar Mahal and Bakhtiari </item>
+         <item> South Khorasan </item>
+         <item> Khorasan Razavi </item>
+         <item> North Khorasan </item>
+         <item> Khouzestan </item>
+         <item> Zanjan </item>
+         <item> Semnan </item>
+         <item> Sistan and Baluchestan </item>
+         <item> Fars </item>
+         <item> Qazvin </item>
+         <item> Qom </item>
+         <item> Kurdistan </item>
+         <item> Kerman </item>
+         <item> Kermanshah </item>
+         <item> Kohgiluyeh and Boyerahmad </item>
+         <item> Golestan </item>
+         <item> Gilan </item>
+         <item> Lorestan </item>
+         <item> Mazandaran </item>
+         <item> Central </item>
+         <item> Hormozgan </item>
+         <item> Hamedan </item>
+         <item> Yazd </item>
+    </string-array>
+    <string-array name="Terms">
+        <item>Full-time</item>
+         <item>Part-Time</item>
+         <item>Telework</item>
+        <item>internship</item>
+    </string-array>
+
+
+    <!--edit profile-->
+    <!--<string name="EditProfile">Edit Profile</string>-->
+    <string name="Name">Name</string>
+    <string name="Lastname">Lastname</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Telephone">Telephone</string>
+    <string name="Email">Email</string>
+    <string name="Postcode">Postcode</string>
+    <string name="Address">Address</string>
+
+    <!--Hire Fragment-->
+    <string name="Province">Provinces</string>
+    <string name="Cooperation">Cooperations</string>
+    <string name="JobCategory2">Job Categories</string>
+
+    <!--Settings-->
+    <string name="notifTitle">Notifications</string>
+
+    <!--about us-->
+    <string name="aboutText">پلت فرم راه احیاء کار خود را از سال 1395 با 2 هدف اصلی کمک به شناخت افراد و کمک به بهبود نقطه ضعف ها و در نهایت کمک به جذب و استخدام در شرکت های معتبر راه اندازی شد. داشتن اطلاعات کافی برای کارفرما ها و امکان اسپاسنسرینگ در آزمون ها و تست های وب سایت راه احیاء است. همچنین برای مراجعین محترم به صورت حضوری امکاناتی همچون مشاوره و نوبت دهی آنلاین در نظر گرفته شده است که از این بخش می توانید از خدمات دکتر ابوالفصل احیایی استفاده و بهرهمند شوید. مبحث جدید نورو مارکتینگ جزء خدماتی است که نمونه ی مشابه آن را  در هیچ یک از سایت های ایرانی نخواهید دید  که هم اکنون در پلت فرم راه احیا در دسترس است.</string>
+
+    <!--edit profile-->
+    <string name="save">Save</string>
+    <string-array name="benefitArray">
+        <item>امکان ترفیع سمت</item>
+        <item>بیمه</item>
+        <item>دوره های آموزشی</item>
+        <item>غذا به عهده شرکت</item>
+        <item>ساعت کاری منعطف</item>
+        <item>سرویس رفت و آمد</item>
+    </string-array>
+    <!--SHOW hire-->
+    <string name="JobTitleShowhire">Job title </string>
+    <string name="JobTimeShowhire">Cooperation type </string>
+    <string name="JobPlaceShowhire">Province</string>
+    <string name="Close">Dissmiss</string>
+    <string name="Send_Resume">Send Resume</string>
+
+    <!--SHOW product-->
+    <string name="ToCart">cart </string>
+    <string name="Buy">order</string>
+    <!--MAKE RESUMe-->
+    <!--<string name="LastDegree">LastDegree</string>-->
+    <string-array name="certificate_arrays">
+        <item>Diploma</item>
+        <item>Associate</item>
+        <item>Bachelor </item>
+        <item>Master </item>
+        <item>PhD</item>
+        <item>Post-Doc></item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="job_status">job status</string>
+    <string-array name="job_status_arrays">
+        <item>job seeker</item>
+        <item>Looking for a better job</item>
+        <item>Employed</item>
+    </string-array>
+
+    <string name="Gender">Gender</string>
+    <string-array name="Gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="Marital">Marital Status</string>
+    <string-array name="Marital_arrays">
+        <item>Married</item>
+        <item>Single</item>
+    </string-array>
+
+    <string name="Militaryservice">Military service status</string>
+    <string-array name="Militaryservice_arrays">
+        <item>End of service</item>
+        <item>permanent exemption</item>
+        <item>education pardon</item>
+        <item>doing</item>
+        <item>Included</item>
+    </string-array>
+
+    <string name="SlugTitle">Exclusive Link to resume:</string>
+    <string name="post">Post:</string>
+    <string name="Company">Company:</string>
+    <string name="From">From:</string>
+    <string name="until">Until:</string>
+    <string name="major">major:</string>
+    <string name="educationplace">Education Place:</string>
+
+    <string name="PIEditPersonalInfo">Edit Personal Information</string>
+    <string name="PIEmailAddress">Email Address:</string>
+    <string name="PIMobile">Mobile:</string>
+    <string name="PIProvince">Province:</string>
+    <string name="PIBirthYear">Birth Year:</string>
+    <string name="PIAddress">Address:</string>
+    <string name="PIMarital">Marital:</string>
+    <string name="PIGender">Gender:</string>
+    <string name="PIMilitaryservice">Militaryservice:</string>
+
+    <string name="SaveChanges">Save Changes</string>
+    <string name="SaveChanges2">Save Changes</string>
+    <string name="DesiredIncometext">Salary list</string>
+    <string-array name="DesiredIncome_arrays">
+        <item>Less than 1 million USD</item>
+        <item>From 1 million to 2.5 million tomans</item>
+        <item>From 2.5 million to 5.3 million tomans</item>
+        <item>From 3.5 million to 5 million USD</item>
+        <item>More than 5 million USD</item>
+    </string-array>
+
+    <string name="ReserveRequestStatus">Time booked </string>
+    <string name="Senority">Senior level</string>
+    <string-array name="Senority_arrays">
+        <item>beginner</item>
+        <item>proficient</item>
+        <item>manager</item>
+        <item>Senior</item>
+    </string-array>
+    <string name="Educationgrade"> Education Grade:</string>
+
+    <string name="contract">Type of work contract</string>
+    <string-array name="contract_arrays">
+        <item>Full-time</item>
+        <item>Part-time</item>
+        <item>Telework</item>
+        <item>internship</item>
+    </string-array>
+
+
+    <!--dialog exam-->
+    <string name="examtype">Exam Type</string>
+    <string name="examprice">Price</string>
+    <string name="examstart">Start Exam</string>
+    <string name="Next">Next</string>
+    <string name="Back">Back</string>
+
+    <string name="reserve_req">Request Type</string>
+    <string name="desc">Description</string>
+    <string name="title_activity_result">Result</string>
+</resources>

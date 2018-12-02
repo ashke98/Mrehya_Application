@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/imgUserImg"
+            android:src="@drawable/ic_checkmark"
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_height="150dp" />
+
+
+        <TextView
+            android:text="اطلاعات کاربری"
+            android:id="@+id/txtUserInfo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="40dp"
+            android:textSize="@dimen/textSize3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutdialog_show_hire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            //Job
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="عنوان شغلی"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/EdittxtJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittxt_resume"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="20dp" />
+            //Birth_Year
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtBirth_YearTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="سال تولد"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/EdittxtBirth_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittxt_resume"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="20dp" />
+            //Job_Status
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtJob_StatusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="وضعیت شغلی"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerJob_Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/job_status_arrays"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:prompt="@string/job_status"
+                android:background="@drawable/edittxt_resume"/>
+            //Province
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtProvinceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="استان"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerProvince"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:entries="@array/Province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:background="@drawable/edittxt_resume"/>
+            //Married
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtMarriedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="وضعیت تاهل"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerMarried"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Marital_arrays"
+                android:prompt="@string/Marital"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:background="@drawable/edittxt_resume"/>
+            //Gender
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGrey" />
+            <TextView
+                android:id="@+id/txtGenderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="جنسیت"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Gender_arrays"
+                android:prompt="@string/Gender"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:background="@drawable/edittxt_resume"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="@color/flatButton"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15dp"
+                android:text="برگشت"/>
+            <Button
+                android:id="@+id/btn_saveresume"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:background="#949494"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="ذخیره"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

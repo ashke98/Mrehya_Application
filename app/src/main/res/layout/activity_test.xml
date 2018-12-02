@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context="com.mrehya.Exams.Test">
+
+    <LinearLayout
+        android:id="@+id/ExamBuyLayout"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:text="Exam is not free"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:text="برای شروع آزمون باید آن را خریداری کنید"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_Buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Buy / خرید"
+            android:background="@drawable/back_btn_red"
+            android:textColor="@color/textColorWhite"
+            />
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btnBack3"
+            android:padding="3dp"
+            android:text="بازگشت"
+            android:textSize="@dimen/textSize1"
+            android:drawableRight="@drawable/ic_back_white"
+            android:textColor="@color/textColorWhite"
+            android:background="@drawable/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ExamNotReadyLayout"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:text="Exam is not ready"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:text="طراحی آزمون کامل نشده است"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_Back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Back / برگشت"
+            android:background="@drawable/back_btn_red"
+            android:textColor="@color/textColorWhite"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ExamLayout"
+        android:padding="20dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <RelativeLayout
+            android:background="@drawable/stroke_bg"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txtNumber"
+                android:layout_marginRight="10dp"
+                android:padding="2dp"
+                android:textSize="15dp"
+                android:id="@+id/txtQuestions"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtNumber"
+                android:text="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@color/LanguageBG"
+                android:textColor="@color/textColorWhite"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:minHeight="70dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+        android:id="@+id/LinearLayouttextViews"
+        android:background="@drawable/stroke_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_Back"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:text="برگشت"
+            android:textSize="@dimen/textSize1"
+            android:drawableRight="@drawable/ic_back_white"
+            android:textColor="@color/textColorWhite"
+            android:background="@drawable/back_btn_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutRadios"
+            android:background="@drawable/stroke_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.ThreeBounce"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/btnNext"
+                android:padding="3dp"
+                android:text="ثبت"
+                android:textSize="@dimen/textSize1"
+                android:drawableRight="@drawable/ic_checkmark_white"
+                android:textColor="@color/textColorWhite"
+                android:background="@drawable/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/progressBar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cpb_background_progressbar_color="#69f0ae"
+                app:cpb_background_progressbar_width="7dp"
+                app:cpb_progressbar_color="#4db6ac"
+                app:cpb_progressbar_width="15dp" />
+
+            <Button
+                android:layout_alignParentLeft="true"
+                android:id="@+id/btnBack"
+                android:padding="3dp"
+                android:text="بازگشت"
+                android:textSize="@dimen/textSize1"
+                android:drawableRight="@drawable/ic_back_white"
+                android:textColor="@color/textColorWhite"
+                android:background="@drawable/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

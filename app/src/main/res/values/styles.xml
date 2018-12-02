@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/flatButton</item>
+    </style>
+
+    <style name="CharacterOverflow">
+        <item name="android:textColor">@color/colorError</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="spinnerItemStyle_rtl" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textEnd</item>-->
+    </style>
+
+    <style name="spinnerDropDownItemStyle_rtl" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:padding">10dp</item>
+        <!--<item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textEnd</item>-->
+    </style>
+
+    <style name="spinnerItemStyle_ltr" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:padding">5dp</item>
+        <!--<item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textstart</item>-->
+    </style>
+
+    <style name="spinnerItemStyle_center" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <!--<item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textstart</item>-->
+    </style>
+
+    <style name="spinnerDropDownItemStyle_ltr" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">ltr</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textDirection" tools:targetApi="jelly_bean_mr1">ltr</item>
+        <item name="android:padding">10dp</item>
+        <!--<item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">textstart</item>-->
+    </style>
+
+    <style name="spinnerDropDownItemStyle_center" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrehya.Shopping.Cart">
+
+
+    <RelativeLayout
+        android:background="@color/textColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <com.mrehya.MyTextView
+            android:id="@+id/txtEmptyCart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="سبد خرید خالی است"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="نهایی کردن خرید"
+            android:textSize="20dp"
+            android:background="@color/my_green"
+            android:textColor="@color/textColorWhite"/>
+    </LinearLayout>
+
+    <include layout="@layout/content_cart" />
+
+
+
+</LinearLayout>

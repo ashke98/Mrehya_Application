@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/RelativeLayout_hirerecycle">
+
+            <com.mrehya.VerticalTextView
+                android:id="@+id/text1"
+                android:text="استخدام"
+                android:textColor="@color/textColorGrey"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:gravity="bottom|right"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_toRightOf="@id/text1"
+                android:id="@+id/thumbnail"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+            <com.mrehya.MyTextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/textColorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+            <LinearLayout
+                android:id="@+id/LinearLayoutRecyclerItem_hire"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1">
+                <ImageView
+                    android:src="@drawable/ic_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <com.mrehya.MyTextView
+                    android:id="@+id/city"
+                    android:textColor="@color/textColorGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.mrehya.MyTextView
+                    android:id="@+id/timeAgo"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/textColorGrey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

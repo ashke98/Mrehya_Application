@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrehya.Shopping.Shop">
+
+    <RelativeLayout
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <com.mrehya.MyTextView
+            android:id="@+id/mytextShop"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/textSize1"
+            android:text="فروشگاه"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btnBack"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="@dimen/textSize1"
+            android:drawableRight="@drawable/ic_back_white"
+            android:textColor="@color/textColorWhite"
+            android:background="@drawable/back_btn_red"
+            />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnToCart"
+                android:textSize="15dp"
+                android:textColor="@color/textColorWhite"
+                android:text="سبد خرید"
+                android:drawableRight="@drawable/ic_cart"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_search"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:hint="جستجو"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtEmptyProductRequest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="لیست آیتم ها خالی است"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

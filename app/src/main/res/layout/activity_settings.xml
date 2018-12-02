@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrehya.Settings">
+    <RelativeLayout
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <com.mrehya.MyTextView
+            android:id="@+id/mytextHirePerson"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/textSize1"
+            android:text="تنظیمات"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layoutDirection="rtl"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/notifToggle"
+                android:layout_width="54dp"
+                toggle:tbOnColor="#64dd17"
+                toggle:tbOffColor="#ddd"
+                toggle:tbSpotColor="#ffffff"
+                toggle:tbOffBorderColor="#cccccc"
+                android:layoutDirection="ltr"
+                toggle:tbBorderWidth="2dp"
+                android:layout_height="30dp" />
+            <com.mrehya.MyTextView
+                android:id="@+id/txtNotifTitle"
+                android:textSize="@dimen/textSize1"
+                android:layout_marginRight="10dp"
+                android:text="@string/notifTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <Button
+            android:layout_marginTop="16dp"
+            android:text="خروج"
+            android:textColor="@color/btnBlue"
+            android:id="@+id/btnLogOut"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

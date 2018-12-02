@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="LanguageBG">#6bbd3e</color>
+    <color name="ButtonColor">#dbdbdb</color>
+    <color name="ButtonColor2">#525252</color>
+    <color name="textColorBlack">#191919</color>
+    <color name="textColorGrey">#666666</color>
+    <color name="textColorWhite">#ffffff</color>
+    <color name="textShadowColor">#000000</color>
+    <color name="bottomNavSelectedBtnColor">#d50000</color>
+    <color name="btnBlue">#448aff</color>
+    <color name="bottomNavNotSelectedBtnColor">#efefef</color>
+    <color name="bgBottomNavigation">#efefef</color>
+    <color name="dashBtnBg">#e7e835</color>
+    <color name="instaBtn">#373737</color>
+    <color name="teleBtn">#2ca6e2</color>
+    <color name="red">#ec3f40</color>
+    <color name="profileGrey">#7d7d7d</color>
+    <color name="colorBg">#dadee2</color>
+    <color name="BGColorDay">#ffffff</color>
+    <color name="BGColorDayTrans">#1cffffff</color>
+    <color name="BGColorNight">#000000</color>
+    <color name="textColorDayPrimary">#000000</color>
+    <color name="textColorDayPrimaryDark">#616161</color>
+    <color name="textColorNightPrimary">#ffffff</color>
+    <color name="textColorNightPrimaryLight">#616161</color>
+    <color name="textColorSecondary">#ffffff</color>
+    <color name="postActivityActionBar">#54000000</color>
+    <color name="btnBlue2">#82b1ff</color>
+    <color name="cardBG">#e0e0e0</color>
+    <color name="flatButton">#2196F3</color>
+    <color name="colorError">#FF5252</color>
+    <color name="colorUpgrade">#FFC107</color>
+    <color name="colorUpgradeCost">#FFD54F</color>
+    <color name="colorSupport">#76FF03</color>
+    <color name="colorSupportCost">#B2FF59</color>
+
+    <color name="btnPrimaryDay">#ffffff</color>
+    <color name="btnPrimaryNight">#000000</color>
+    <color name="btnSecondary">#00BCD4</color>
+    <color name="btnSelected">#fffb80</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="my_green">#05a702</color>
+    <color name="my_orange">#c95e00</color>
+    <color name="my_grey1">#febfc6bf</color>
+    <color name="my_blue1">#fe4765d1</color>
+
+
+    <color name="colorPrimary2">#F50057</color>
+    <color name="colorPrimaryDark2">#F50057</color>
+    <color name="colorAccent2">#FF4081</color>
+    <color name="viewBg2">#f1f5f8</color>
+    <color name="album_title2">#4c4c4c</color>
+
+    <color name="shimmercolorPrimary">#d91248</color>
+    <color name="shimmercolorPrimaryDark">#d91248</color>
+    <color name="shimmercolorAccent">#3ad23e</color>
+    <color name="shimmerplaceholder_bg">#dddddd</color>
+    <color name="shimmeritem_name">#0c0c0c</color>
+    <color name="shimmerdescription">#1a1a1a</color>
+    <color name="shimmerchef">#36da21</color>
+    <color name="shimmertimestamp">#777</color>
+</resources>

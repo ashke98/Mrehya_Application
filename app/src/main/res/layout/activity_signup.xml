@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:padding="16dp"
+        android:id="@+id/activity_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context="com.mrehya.UserAccount.Signup">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstnameTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFirstname"
+                android:hint="نام"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastnameTextInputLayout"
+            android:layout_below="@+id/firstnameTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLastname"
+                android:hint="نام خانوادگی"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextInputLayout"
+            android:layout_below="@+id/lastnameTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmailLogin"
+                android:hint="ایمیل"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobileTextInputLayout"
+            android:layout_below="@+id/emailTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtMobile"
+                android:hint="موبایل"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTextInputLayout"
+            android:layout_below="@+id/mobileTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPhone"
+                android:hint="تلفن"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/phoneTextInputLayout"
+            app:passwordToggleEnabled="false"
+            app:counterOverflowTextAppearance="@style/CharacterOverflow"
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPassword"
+                android:hint="رمز"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordTextInputLayoutAgain"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/passwordTextInputLayout"
+            app:passwordToggleEnabled="false"
+            app:counterOverflowTextAppearance="@style/CharacterOverflow"
+            app:errorTextAppearance="@style/CharacterOverflow"
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPasswordAgain"
+                android:hint="تکرار رمز"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/passwordTextInputLayoutAgain"
+            android:background="@drawable/btn_primary_day"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:text="تأیید"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToLogin"
+            android:background="@drawable/btn_secondary"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/passwordTextInputLayoutAgain"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp"
+            android:text="صفحه ورود"
+            />
+    </RelativeLayout>
+</ScrollView>

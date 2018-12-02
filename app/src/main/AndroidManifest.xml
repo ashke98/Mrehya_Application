@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" package="com.mrehya">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <!-- / -->
+    <!-- Pushe -->
+    <permission
+        android:name="com.mrehya.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.mrehya.permission.C2D_MESSAGE" />
+
+    <!-- Optional permissions -->
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Language">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PUSHE -->
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="com.mrehya"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.mrehya" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_196945679546" />
+        <meta-data
+            android:name="co.ronash.pushe.cr"
+            android:value="Tm9uZQ==" />
+
+        <service
+            android:name=".Pushe_Notification.MyPushListener"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="co.ronash.pushe.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!-- PushListener can be somewhere else according to your packaging -->
+
+        <activity android:name=".MainActivity" />
+        <!-- scheduler -->
+        <!-- <receiver -->
+        <!-- android:name=".Nofification.AlarmNotifReciever" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- <action android:name="android.intent.action.QUICKBOOT_POWERON" /> -->
+        <!-- <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- &lt;!&ndash; Alarm scheduler &ndash;&gt; -->
+        <!-- <service android:name=".Nofification.Alarm_BackgroundService" /> -->
+
+
+        <!-- <receiver android:name=".Nofification.AlarmReceiver" /> -->
+
+        <activity android:name=".Reserv.Reserve" />
+        <activity android:name=".Articles.MedicalService" />
+        <activity android:name=".UserAccount.LoginOrSignup" />
+        <activity android:name=".UserAccount.Signup" />
+        <activity android:name=".UserAccount.Login" />
+        <activity android:name=".Shopping.Cart" />
+        <activity android:name=".Shopping.Shop" />
+        <activity android:name=".Shopping.ShowProduct" />
+        <activity android:name=".Exams.Test" />
+        <activity android:name=".Exams.ChooseExam" />
+        <activity android:name=".Exams.ExamEnd" />
+        <activity android:name=".Shopping.ShowPurchase" />
+        <activity android:name=".Hire.ShowHireStatus" />
+        <activity android:name=".Settings" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Resume.ResumeMainActivity" />
+        <activity android:name=".Resume.ResumeUserInfoActivity" />
+        <activity android:name=".Resume.ResumeActivitiesActivity" />
+        <activity android:name=".Resume.ResumeLanguagesActivity" />
+        <activity android:name=".Resume.ResumeJobexpActivity" />
+        <activity android:name=".Resume.ResumeEducationActivity" />
+        <activity android:name=".Resume.ResumeBenefitsActivity" />
+        <activity android:name=".Resume.ResumeViewActivity" />
+        <activity android:name=".Exams.ExamResult" />
+        <activity android:name=".Exams.Result"/>
+    </application>
+
+</manifest>

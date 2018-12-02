@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.mrehya.Resume.ResumeViewActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.mrehya.MakeResume">
+            <TextView
+                android:id="@+id/txtNotloggedin"
+                android:textSize="@dimen/textSize2"
+                android:text="برای مشاهده رزومه باید لاگین باشید"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textColorBlack"
+                android:visibility="gone"
+                android:layout_marginTop="150dp"/>
+            //LinearLayoutResumeView
+            <LinearLayout
+                android:id="@+id/LinearLayoutResumeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="10dp">
+                //TOP JobTitle Slug JobStatus
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/resumeProfilePic"
+                        android:layout_width="@dimen/resumeProfilePic"
+                        android:layout_height="@dimen/resumeProfilePic"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/profileGrey"
+                        android:scaleType="fitXY" />
+                    //LinearLayoutresumeJob gravity,foregroundGravity
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutresumeJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/resumeProfilePic"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        //txtJobTitle txtJobTitleTitle
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txtJobTitleTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:text="عنوان شغلی: " />
+                            <TextView
+                                android:id="@+id/txtJobTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="عنوان شغلی"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+
+
+                        </LinearLayout>
+                        //txtjob_status txtjob_statusTitle
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txtjob_statusTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="rtl"
+                                android:text="وضعیت شغلی: " />
+                            <TextView
+                                android:id="@+id/txtjob_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="rtl"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text=""
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        //txtLastDegree txtLastDegreeTitle
+                        <LinearLayout
+                            android:id="@+id/LinearLayoutDegree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/txtLastDegree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="rtl"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:text="..."
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/txtLastDegreeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="آخرین مدرک تحصیلی: "
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutPrivateInfoTitle layout_gravity gravity
+                <LinearLayout
+                    android:id="@+id/LinearLayoutPrivateInfoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    //txtPrivateInfoTitle
+                    <TextView
+                        android:id="@+id/txtPrivateInfoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاعات فردی"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //LinearLayoutPrivateInfo layout_gravity gravity
+                <LinearLayout
+                    android:id="@+id/LinearLayoutPrivateInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+                    //txtEmailAddress txtEmailAddressTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtEmailAddressTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آدرس ایمیل: " />
+                        <TextView
+                            android:id="@+id/txtEmailAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    //txtPhone txtPhoneTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtPhoneTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شماره موبایل: " />
+                        <TextView
+                            android:id="@+id/txtPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    //txtProvinceResume txtProvinceResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtProvinceResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="استان محل سکونت: " />
+                        <TextView
+                            android:id="@+id/txtProvinceResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    //txtMarriageResume txtMarriageResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtMarriageResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="وضعیت تأهل: " />
+                        <TextView
+                            android:id="@+id/txtMarriageResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    //txtGenderResume txtGenderResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtGenderResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="جنسیت: " />
+
+                        <TextView
+                            android:id="@+id/txtGenderResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //txtBirthYearResume txtBirthYearResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtBirthYearResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="سال تولد: " />
+                        <TextView
+                            android:id="@+id/txtBirthYearResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //txtDutyResume txtDutyResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtDutyResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="وضعیت خدمت سربازی: " />
+                        <TextView
+                            android:id="@+id/txtDutyResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //txtAddressResume txtAddressResumeTitle
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtAddressResumeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آدرس: " />
+                        <TextView
+                            android:id="@+id/txtAddressResume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                //TALENTS
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutTalentsTitle layout_gravity gravity
+                <LinearLayout
+                    android:id="@+id/LinearLayoutTalentsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                    //txtTalentsTitle
+                    <TextView
+                        android:id="@+id/txtTalentsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مهارت‌های حرفه‌ای"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //listViewProes layoutDirection layout_gravity foregroundGravity
+                <ListView
+                    android:id="@+id/listViewTalents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:foregroundGravity="right"
+                    android:layoutDirection="ltr" />
+                //LANGUAGES EDUCATION JOB
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutJobEduLang
+                <LinearLayout
+                    android:id="@+id/LinearLayoutJobEduLang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    //LinearLayoutJobExp
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutJobExp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        //txtJobExpTitle
+                        <TextView
+                            android:id="@+id/txtJobExpTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
+                            android:text="سوابق شغلی"
+                            android:textSize="@dimen/textSize2" />/>
+                    </LinearLayout>
+                    //listViewJobExps
+                    <ListView
+                        android:id="@+id/listViewJobExps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/textColorGrey" />
+                    //LinearLayoutEducation
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutEducation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        //txtEducationTitle
+                        <TextView
+                            android:id="@+id/txtEducationTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سوابق تحصیلی"
+                            android:textSize="@dimen/textSize2" />
+                    </LinearLayout>
+
+                    //listViewEducation
+                    <ListView
+                        android:id="@+id/listViewEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/textColorGrey" />
+                    //LinearLayoutLanguages
+                    <LinearLayout
+                        android:id="@+id/LinearLayoutLanguages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        //txtLanguages
+                        <TextView
+                            android:id="@+id/txtLanguages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="زبان‌ها"
+                            android:textSize="@dimen/textSize2" />
+                    </LinearLayout>
+                    //listViewLanguages
+                    <ListView
+                        android:id="@+id/listViewLanguages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/textColorGrey" />
+                </LinearLayout>
+                //LinearLayoutJobFavoritesTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutJobFavoritesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtJobFavoritesTitle
+                    <TextView
+                        android:id="@+id/txtJobFavoritesTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="علاقه مندی‌های شغلی"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="@dimen/textSize1" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayouttxtSelectedProvincesTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayouttxtSelectedProvincesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtSelectedProvincesTitle
+                    <TextView
+                        android:id="@+id/txtSelectedProvincesTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="استان‌های مورد نظر"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listViewProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutJobCatTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutJobCatTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtJobCategory
+                    <TextView
+                        android:id="@+id/txtJobCatTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دسته بندی شغلی و زمینه کاری"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listViewJobcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutContractsTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutContractsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtContractsTitle
+                    <TextView
+                        android:id="@+id/txtContractsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نوع قرارداد‌های قابل قبول"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listViewContracts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutLevelsTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutLevelsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtLevels
+                    <TextView
+                        android:id="@+id/txtLevelsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سطح ارشدیت در زمینه‌ی فعالیت"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //listViewLevels
+                <ListView
+                    android:id="@+id/listViewLevels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutSalaryTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutSalaryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    //txtSalaryTitle
+                    <TextView
+                        android:id="@+id/txtSalaryTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="حقوق مورد نظر:"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //LinearLayoutSalary
+                <LinearLayout
+                    android:id="@+id/LinearLayoutSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    //txtSalary
+                    <TextView
+                        android:id="@+id/txtSalary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutBenefitsTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutBenefitsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    //txtBenefitsTitle
+                    <TextView
+                        android:id="@+id/txtBenefitsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مزایای شغلی مورد نظر"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //LinearLayoutBenefits
+                <LinearLayout
+                    android:id="@+id/LinearLayoutBenefits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    //txtBenefits
+                    <TextView
+                        android:id="@+id/txtBenefits1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/txtBenefits2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/txtBenefits3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/txtBenefits4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/txtBenefits5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/txtBenefits6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=""
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textColorGrey" />
+                //LinearLayoutAboutMeTitle
+                <LinearLayout
+                    android:id="@+id/LinearLayoutAboutMeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    //txtAboutMeTitle
+                    <TextView
+                        android:id="@+id/txtAboutMeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="درباره من"
+                        android:textSize="@dimen/textSize2" />
+                </LinearLayout>
+                //txtAboutMe
+                <TextView
+                    android:id="@+id/txtAboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="درباره من"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/textColorBlack" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,169 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrehya.NuroFragment">
+
+    <com.mrehya.MyTextView
+        android:id="@+id/mytextMainMenu"
+        android:background="@color/red"
+        android:textColor="@color/textColorWhite"
+        android:textSize="@dimen/textSize1"
+        android:text="منوی اصلی"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutnuro1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/nuro_marketing"
+            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mrehya.MyTextView
+                android:id="@+id/mytextWhatIsNuro"
+                android:text="نورو مارکتینگ چیست؟ چه کاربردهایی دارد؟"
+                android:textStyle="bold"
+                android:textColor="@color/textColorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.mrehya.MyTextView
+                android:id="@+id/mytextNuroExplain1"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="@string/NuroExplain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.mrehya.MyTextView
+        android:id="@+id/mytextNuroExplain2"
+        android:textColor="@color/textColorGrey"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/NuroExplain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.mrehya.MyTextView
+        android:id="@+id/mytextNuroExplain3"
+        android:textColor="@color/textColorGrey"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/NuroExplain3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.mrehya.MyTextView
+        android:id="@+id/mytextNuroExplain4"
+        android:textColor="@color/textColorGrey"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/NuroExplain4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp">-->
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.5">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest1"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/nuroTest2"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/nuroTest3"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest4"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.5">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest5"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest6"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest7"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/nuroTest8"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/dash_btn"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp">-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+</ScrollView>

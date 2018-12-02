@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="2dp"
+    android:id="@+id/LinearLayoutmain"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl">
+
+    <TextView
+            android:id="@+id/txtJobBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مزایای شغلی مورد نظر"
+            android:textSize="@dimen/textSize2"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/textColorGrey" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkPromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="امکان ترفیع سمت"
+        android:textSize="@dimen/textSize1"
+        android:layout_gravity="right"
+        android:gravity="right"/>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkInsur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="بیمه"
+        android:textSize="@dimen/textSize1" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkTrainingCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="دوره‌های آموزشی"
+        android:textSize="@dimen/textSize1" />
+
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkFlexiableHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="ساعت کاری منعطف"
+        android:textSize="@dimen/textSize1" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkTransporting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="سرویس رفت‌و‌آمد"
+        android:textSize="@dimen/textSize1" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/chkFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="غذا به عهده‌ی شرکت"
+        android:textSize="@dimen/textSize1" />
+
+
+
+
+
+    <!--about me-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@color/flatButton"
+            android:textColor="@color/textColorWhite"
+            android:textSize="15dp"
+            android:text="برگشت"/>
+        <Button
+            android:id="@+id/btn_saveresume"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="#949494"
+            android:textColor="@color/textColorWhite"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="ذخیره"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

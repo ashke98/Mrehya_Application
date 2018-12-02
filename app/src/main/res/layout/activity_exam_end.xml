@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrehya.Exams.ExamEnd">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.mrehya.MyTextView
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/stroke_bg"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/textSize1"
+            android:text="آزمون شما به پایان رسید."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.mrehya.MyTextView
+            android:id="@+id/txtPoint"
+            android:padding="10dp"
+            android:background="@drawable/stroke_bg"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/textSize1"
+            android:text="امتیاز شما = "
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="@color/textColorWhite"
+            android:text="پایان"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/next_btn"
+            android:layout_gravity="center"
+            android:id="@+id/btnEndExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

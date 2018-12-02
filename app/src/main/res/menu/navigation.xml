@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl">
+
+    <item
+        android:id="@+id/navigation_hire"
+        android:icon="@drawable/hire"
+        android:title="@string/buttomNavHire" />
+
+    <item
+        android:id="@+id/navigation_nuro"
+        android:icon="@drawable/neuromarketing"
+        android:title="@string/buttomNavNuro" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title=""
+        android:icon="@drawable/neuromarketing"
+         />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="@string/buttomNavProf" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/more"
+        android:title="@string/buttomNavMore" />
+
+</menu>

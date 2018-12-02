@@ -1,0 +1,382 @@
+<resources>
+    <string name="app_name">Mrehya</string>
+
+    <string name="action_settings">تنظیمات</string>
+    <string name="action_add_favourite">مشاهده نتیجه</string>
+    <string name="action_play_next">مشاهده آزمون / Try Exam</string>
+    <string name="action_show_exam">مشاهده نتیجه / View Result</string>
+    <string name="backdrop_title">خوتو محک بزن</string>
+    <string name="backdrop_subtitle">لیست آزمون ها</string>
+    <string name="examnotfound">لیست آزمون‌ها خالی است</string>
+
+
+    <string-array name="years">
+        <item>۱۳۹۷</item>
+        <item>۱۳۹۶</item>
+        <item>۱۳۹۵</item>
+        <item>۱۳۹۴</item>
+        <item>۱۳۹۳</item>
+        <item>۱۳۹۲</item>
+        <item>۱۳۹۱</item>
+        <item>۱۳۹۰</item>
+        <item>۱۳۸۹</item>
+        <item>۱۳۸۸</item>
+        <item>۱۳۸۷</item>
+        <item>۱۳۸۶</item>
+        <item>۱۳۸۵</item>
+        <item>۱۳۸۴</item>
+        <item>۱۳۸۳</item>
+        <item>۱۳۸۲</item>
+        <item>۱۳۸۱</item>
+        <item>۱۳۸۰</item>
+        <item>۱۳۷۹</item>
+        <item>۱۳۷۸</item>
+        <item>۱۳۷۷</item>
+        <item>۱۳۷۶</item>
+        <item>۱۳۷۵</item>
+        <item>۱۳۷۴</item>
+        <item>۱۳۷۳</item>
+        <item>۱۳۷۲</item>
+        <item>۱۳۷۱</item>
+        <item>۱۳۷‍۰</item>
+        <item>۱۳۶۹</item>
+        <item>۱۳۶۸</item>
+        <item>۱۳۶۷</item>
+        <item>۱۳۶۶</item>
+        <item>۱۳۶۵</item>
+        <item>۱۳۶۴</item>
+        <item>۱۳۶۳</item>
+        <item>۱۳۶۲</item>
+        <item>۱۳۶۱</item>
+        <item>۱۳۶۰</item>
+
+
+    </string-array>
+    <string-array name="langLevels">
+        <item>مبتدی</item>
+        <item>متوسط</item>
+        <item>حرفه ای</item>
+        <item>زبان مادری</item>
+    </string-array>
+
+    <string-array name="Province">
+        <item>آذربایجان\u0020شرقی</item>
+        <item>آذربایجان غربی</item>
+        <item>اردبیل</item>
+        <item>اصفهان</item>
+        <item>البرز</item>
+        <item>ایلام</item>
+        <item>بوشهر</item>
+        <item>تهران</item>
+        <item>چهارمحال و بختیاری</item>
+        <item>خراسان جنوبی</item>
+        <item>خراسان رضوی</item>
+        <item>خراسان شمالی</item>
+        <item>خوزستان</item>
+        <item>زنجان</item>
+        <item>سمنان</item>
+        <item>سیستان و بلوچستان</item>
+        <item>فارس</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کردستان</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>کهگیلویه و بویراحمد</item>
+        <item>گلستان</item>
+        <item>گیلان</item>
+        <item>لرستان</item>
+        <item>مازندران</item>
+        <item>مرکزی</item>
+        <item>هرمزگان</item>
+        <item>همدان</item>
+        <item>یزد</item>
+    </string-array>
+    <string-array name="Terms">
+        <item>تمام‌وقت</item>
+        <item>‍ پاره‌وقت</item>
+        <item>دورکاری</item>
+        <item>کارآموزی</item>
+    </string-array>
+
+
+    <string name="dashboard">پیشخوان</string>
+
+    <!--menu navigation xml-->
+    <string name="buttomNavHire">استخدام</string>
+    <string name="buttomNavNuro">نورو مارکتینگ</string>
+    <string name="buttomNavDash">پیشخوان</string>
+    <string name="buttomNavProf">پروفایل</string>
+    <string name="buttomNavMore">بیشتر</string>
+
+    <!--More Fragment-->
+    <string name="MainMenu">منوی اصلی</string>
+    <string name="MakeResume">ساخت رزومه</string>
+    <string name="GoToExams">َشرکت در آزمون‌ها</string>
+    <string name="ExamResults">نتایج آزمون</string>
+    <string name="Shop">فروشگاه اینترنتی</string>
+    <string name="MedicalServices">نوبت دهی</string>
+    <string name="Settings">تنظیمات</string>
+    <string name="AboutUs">درباره ما</string>
+
+    <!--Profile Fragment-->
+    <string name="profileType">کاربر عادی</string>
+    <string name="UserInfo">اطلاعات کاربری</string>
+    <string name="UserInfo2">اطلاعات خرید و استخدام</string>
+    <string name="SignInOrUp">ورود / ثبت نام</string>
+    <string name="LogOut">خروج</string>
+    <string name="EditProfile">ویرایش پروفایل</string>
+    <string name="showPurchases">مشاهده خریدها</string>
+    <string name="hireRequestStatus">وضعیت درخواست‌های استخدام</string>
+    <string name="ReserveRequestStatus">وقت های رزرو شده</string>
+    <string name="Instagram">اینستاگرام</string>
+    <string name="Telegram">تلگرام</string>
+
+
+    <!--Nuro Fragment-->
+    <string name="WhatIsNuro">نورو مارکتینگ چیست؟ چه کاربردهایی دارد؟</string>
+    <!--<string name="MainMenu">Telegram</string>-->
+    <string name="NuroExplain1">کاربرد  ابزار، دست آورها، و آزمون های برآمده از رشته های علمی روان شناسی و علوم مغز و اعصاب و عصب شناسی به منظور اندازه گیری و سنجش واکنش های زیستی</string>
+    <string name="NuroExplain2">در مواجهه با محرک های بازاریابی (راهبردهای بازاریابی، ارتباطات، تبلیغات، محصولات جدید و محصولات موجود).</string>
+    <string name="NuroExplain3">نورومارکتینگ نوید دهنده نوع جدیدی از بازاریابی است که کاملا ماهیت میان رشته ای دارد. جایی که علوم مدیریت، عصب شناسی، روانشناسی و شاید هم به نوعی هنر به هم پیوند می خورند.</string>
+    <string name="NuroExplain4">به بیان ساده نورومارکتینگ پژوهش مبنایی رفتار مصرف کننده با استفاده از ابزار علمی مدرن و دقیق ( به ویژه ابزار پزشکی)</string>
+
+    <!--Hire Fragment-->
+    <string name="HirePerson">استخدام کارجو</string>
+    <!--Hire Adapter-->
+    <string name="Hire">استخدام</string>
+
+    <!--Dashboard Fragment-->
+    <string name="HireBestCompanies">استخدام در بهترین شرکت‌ها</string>
+    <string name="PsycoTest">تست‌های روانشناسی</string>
+    <string name="PsycoTests1">وابستگی به اینترنت</string>
+    <string name="PsycoTests2">وابستگی به اینترنت</string>
+    <string name="PsycoTests3">وابستگی به اینترنت</string>
+    <string name="PsycoTests4">وابستگی به اینترنت</string>
+    <string name="PsycoTests5">وابستگی به اینترنت</string>
+    <string name="PsycoTests6">وابستگی به اینترنت</string>
+
+
+    <!--Make Resume-->
+    <string name="JobTitle2"> عنوان شغلی: </string>
+    <string name="LastDegreeTitle">آخرین مدرک تحصیلی:</string>
+    <string name="Edit">ویرایش</string>
+    <string name="PrivateInfo">اطلاعات فردی</string>
+    <string name="EmailAddressTitle">آدرس ایمیل: </string>
+    <string name="PhoneTitle">شماره موبایل:  </string>
+    <string name="ProvinceResumeTitle">استان محل سکونت: </string>
+    <string name="MarriageResumeTitle">وضعیت تأهل:  </string>
+    <string name="GenderResumeTitle">جنسیت:  </string>
+    <string name="BirthYearResumeTitle">سال تولد:   </string>
+    <string name="DutyResumeTitle">وضعیت خدمت سربازی: </string>
+    <string name="AddressResumeTitle">آدرس:  </string>
+    <string name="Talents">مهارت‌های حرفه‌ای</string>
+    <string name="JobExp">سوابق شغلی</string>
+    <string name="GraduateExp">سوابق تحصیلی</string>
+    <string name="Languages">زبان‌ها</string>
+    <string name="JobFavorites">علاقه مندی‌های شغلی</string>
+    <string name="SelectedProvinces">استان‌های مورد نظر</string>
+    <string name="JobCategory">دسته بندی شغلی و زمینه کاری</string>
+    <string name="AcceptedContract">نوع قرارداد‌های قابل قبول</string>
+    <string name="ActivityLevel">سطح ارشدیت در زمینه‌ی فعالیت</string>
+    <string name="ActualRights">حقوق مورد نظر</string>
+    <string name="JobBenefits">مزایای شغلی مورد نظر</string>
+    <string name="chkPromo">امکان ترفیع سمت</string>
+    <string name="chkInsur">بیمه</string>
+    <string name="chkTrainingCourse">دوره‌های آموزشی</string>
+    <string name="chkFood">غذا به عهده‌ی شرکت</string>
+    <string name="chkTransporting">ساعت کاری منعطف</string>
+    <string name="chkFlexiableHours">سرویس رفت و‌آمد</string>
+    <string name="SaveBenfits">ثبت مزایای شغلی</string>
+    <string name="AboutMe2">درباره من</string>
+    <string name="AboutMe">درباره من</string>
+    <string name="Salary">سرمایه</string>
+
+    <!--Medical Services-->
+    <!--<string name="MainMenu">Main Menu</string>-->
+    <string name="Onlineclinicbookkeeping">نوبت دهی اینترنتی</string>
+    <string name="articles">مقالات</string>
+    <string name="article">مقاله</string>
+
+    <!--Shop-->
+    <!--<string name="Shop">Shop</string>-->
+    <string name="product">محصول</string>
+
+
+    <!--Choose Exam-->
+    <string name="Exams">آزمون‌ها</string>
+    <string name="Minute">دقیقه</string>
+    <string name="Question">سوال</string>
+    <string name="Exam">آزمون‌</string>
+
+    <!--Login Or Signup-->
+    <string name="Login">ورود</string>
+    <string name="Signup">ثبت نام</string>
+    <string name="enterAsGuest">برگشت</string>
+
+    <!--Login Signup-->
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="Password">رمز ورود</string>
+    <string name="ForgotPassword">رمزمو یادم رفته!</string>
+    <string name="Submit">تأیید</string>
+    <string name="LoginPage">صفحه ورود</string>
+    <string name="PasswordAgain">تکرار رمز</string>
+
+
+    <!--edit profile-->
+    <!--<string name="EditProfile">Edit Profile</string>-->
+    <string name="Name">نام</string>
+    <string name="Lastname">نام خانوادگی</string>
+    <string name="PhoneNumber">شماره موبایل</string>
+    <string name="Telephone">تلفن</string>
+    <string name="Email">ایمیل</string>
+    <string name="Postcode">کد پستی</string>
+    <string name="Address">آدرس</string>
+
+
+    <!--Hire Fragment-->
+    <string name="Province">موقعیت</string>
+    <string name="Cooperation">انواع قرارداد</string>
+    <string name="JobCategory2">دسته بندی شغلی</string>
+
+    <!--Settings-->
+    <string name="notifTitle">دریافت اعلانات</string>
+
+    <!--about us-->
+    <string name="aboutText">پلت فرم راه احیاء کار خود را از سال 1395 با 2 هدف اصلی کمک به شناخت افراد و کمک به بهبود نقطه ضعف ها و در نهایت کمک به جذب و استخدام در شرکت های معتبر راه اندازی شد. داشتن اطلاعات کافی برای کارفرما ها و امکان اسپاسنسرینگ در آزمون ها و تست های وب سایت راه احیاء است. همچنین برای مراجعین محترم به صورت حضوری امکاناتی همچون مشاوره و نوبت دهی آنلاین در نظر گرفته شده است که از این بخش می توانید از خدمات دکتر ابوالفصل احیایی استفاده و بهرهمند شوید. مبحث جدید نورو مارکتینگ جزء خدماتی است که نمونه ی مشابه آن را  در هیچ یک از سایت های ایرانی نخواهید دید  که هم اکنون در پلت فرم راه احیا در دسترس است.</string>
+
+    <!--edit profile-->
+    <string name="save">ذخیره</string>
+
+
+    <!--SHOW hire-->
+    <string name="JobTitleShowhire">شغل مورد نظر: </string>
+    <string name="JobTimeShowhire">وقت کاری: </string>
+    <string name="JobPlaceShowhire">محل کار: </string>
+    <string name="Close">بستن</string>
+    <string name="Send_Resume">ارسال رزومه</string>
+
+
+    <!--SHOW product-->
+    <string name="ToCart">+ سبد </string>
+    <string name="Buy">خرید</string>
+    <!--MAKE RESUMe-->
+    <!--<string name="LastDegree">LastDegree</string>-->
+    <string-array name="certificate_arrays">
+        <item>دیپلم</item>
+        <item>کاردانی</item>
+        <item>کارشناسی</item>
+        <item>کارشناسی ارشد</item>
+        <item>دکترا و بالاتر</item>
+        <item>دیگر</item>
+    </string-array>
+
+    <string name="Educationgrade"> مقطع تحصیلی</string>
+    <string name="job_status">وضعیت شغلی</string>
+    <string-array name="job_status_arrays">
+        <item>جویای کار</item>
+        <item>به دنبال شغل بهتر</item>
+        <item>شاغل</item>
+    </string-array>
+
+    <string name="Gender">جنسیت</string>
+    <string-array name="Gender_arrays">
+        <item>مرد</item>
+        <item>زن</item>
+    </string-array>
+
+    <string name="Marital">وضعیت تاهل</string>
+    <string-array name="Marital_arrays">
+        <item>متاهل</item>
+        <item>مجرد</item>
+    </string-array>
+
+
+    <string name="Militaryservice">وضعیت خدمت سربازی</string>
+    <string-array name="Militaryservice_arrays">
+        <item>پایان خدمت</item>
+        <item>معافیت دائم</item>
+        <item>معافیت تحصیلی</item>
+        <item>در حال انجام</item>
+        <item>مشمول</item>
+    </string-array>
+
+    <string name="SlugTitle">لینک اختصاصی رزومه:</string>
+    <string name="post">سمت:</string>
+    <string name="Company">شرکت:</string>
+    <string name="From">از:</string>
+    <string name="until">تا:</string>
+    <string name="major">رشته و گرایش:  </string>
+    <string-array name="langs">
+        <item>انگلیسی</item>
+        <item>فارسی</item>
+        <item>عربی</item>
+    </string-array>
+
+    <string name="PIEditPersonalInfo">ویرایش اطلاعات فردی</string>
+    <string name="PIEmailAddress">آدرس ایمیل</string>
+    <string name="LastDegree">آخرین مدرک تحصیلی</string>
+    <string name="educationplace">محل تحصیل:</string>
+    <string name="PIMobile">موبایل</string>
+    <string name="PIProvince">استان</string>
+    <string name="PIBirthYear">سال تولد</string>
+    <string name="PIAddress">آدرس</string>
+    <string name="PIMarital">وضعیت تاهل</string>
+    <string name="PIGender">جنسیت</string>
+    <string name="PIMilitaryservice">وضعیت سربازی</string>
+
+    <string name="SaveChanges">اعمال تغییرات</string>
+    <string name="SaveChanges2">ذخیره تغییرات</string>
+    <string name="DesiredIncometext">لیست حقوق ها</string>
+    <string-array name="DesiredIncome_arrays">
+        <item>  کمتر از ۱ میلیون تومان</item>
+        <item>از ۱ میلیون تا ۲/۵ میلیون تومان</item>
+        <item>از ۲/۵ میلیون تا ۳/۵ میلیون تومان</item>
+        <item>از ۳/۵ میلیون تا ۵ میلیون تومان</item>
+        <item>بیش از ۵ میلیون تومان</item>
+
+    </string-array>
+
+    <string name="Senority">سطح ارشد</string>
+    <string-array name="Senority_arrays">
+        <item>تازه کار</item>
+        <item>متخصص</item>
+        <item>مدیر</item>
+        <item>مدیر ارشد</item>
+    </string-array>
+
+    <string name="contract">نوع قراردادهای قابل قبول</string>
+    <string-array name="contract_arrays">
+        <item>تمام وقت</item>
+        <item>پاره وقت</item>
+        <item>دورکاری</item>
+        <item>کارآموزی</item>
+    </string-array>
+
+    <!--MAKE RESUMe-->
+    <!--mahmoood-->
+    <string-array name="benefitArray">
+        <item>امکان ترفیع سمت</item>
+        <item>بیمه</item>
+        <item>دوره های آموزشی</item>
+        <item>غذا به عهده شرکت</item>
+        <item>ساعت کاری منعطف</item>
+        <item>سرویس رفت و آمد</item>
+    </string-array>
+
+
+    <!--dialog exam-->
+    <string name="examtype">نوع تست</string>
+    <string name="examprice">هزینه </string>
+    <string name="examstart">شروع تست</string>
+    <string name="Next">بعدی</string>
+    <string name="Back">برگشت</string>
+    <string name="title_activity_resume_build">ResumeBuildActivity</string>
+    <string name="title_resumemain_list">ResumeCols</string>
+    <string name="title_resumemain_detail">ResumeMain Detail</string>
+
+    <string name="reserve_req">نوع درخواست</string>
+    <string name="desc">توضیحات</string>
+    <string name="title_activity_result">Result</string>
+</resources>
