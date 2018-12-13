@@ -123,6 +123,7 @@
         <activity android:name=".Resume.ResumeViewActivity" />
         <activity android:name=".Exams.ExamResult" />
         <activity android:name=".Exams.Result"/>
+        <activity android:name=".Exams.RetriveExamsHistory"/>
     </application>
 
 </manifest>

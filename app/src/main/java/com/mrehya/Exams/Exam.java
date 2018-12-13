@@ -120,6 +120,12 @@ public class Exam {
 
     }
 
+    public Exam(String name) {
+        this.name = name;
+
+    }
+
+
 
     public void add_Q(Question q) {
         questions.add(q);

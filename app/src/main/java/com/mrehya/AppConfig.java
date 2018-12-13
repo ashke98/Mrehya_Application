@@ -47,4 +47,9 @@ public class AppConfig {
     public static String URL_Get_Exam = "https://api.mrehya.com/v1/quizzes/view/";
     public static String URL_Get_Exam_CODE = "https://api.mrehya.com/v1/user/end/";
     public static String URL_Get_Exam_RESULT = "https://api.mrehya.com/v1/user/result/";
+
+
+    public static String URL_Get_USER_RESERVED = "https://api.mrehya.com/v1/user/reserved";
+    public static String URL_Get_USER_EXAMS_RESAULT = "https://api.mrehya.com/v1/user/exams";
+
 }

@@ -41,6 +41,7 @@ import com.mrehya.ApiHelpers.ApiHelpers;
 import com.mrehya.AppConfig;
 import com.mrehya.AppController;
 import com.mrehya.DashboardPackage.HttpsTrustManager;
+import com.mrehya.Exams.RetriveExamsHistory;
 import com.mrehya.Helper.LocaleHelper;
 import com.mrehya.Hire.ShowHireStatus;
 import com.mrehya.Language;
@@ -83,7 +84,7 @@ public class ProfileFragment extends Fragment {
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
     //ELEMENTS
     private Button btnSignInOrUp, showPurchases, hireRequestStatus, btnEditProfile,
-             BtnInstagram ,btnTelegram, ReserveRequestStatus, btn_save_editprof;
+             BtnInstagram ,btnTelegram, ReserveRequestStatus, btn_save_editprof,ExamsHistory;
     private AlertDialog ad ;
     private MyTextView profileType, mytextUserInfo, mytextUserInfo2, profname;
     private LinearLayout LinearLayoutprofile1,LinearLayoutprofile2,LinearLayoutprofile3,LinearLayoutprofile4
@@ -106,6 +107,7 @@ public class ProfileFragment extends Fragment {
         showPurchases = view.findViewById(R.id.showPurchases);
         hireRequestStatus = view.findViewById(R.id.hireRequestStatus);
         ReserveRequestStatus = view.findViewById(R.id.ReserveRequestStatus);
+        ExamsHistory = view.findViewById(R.id.ExamsHistory);
 
         btnEditProfile = view.findViewById(R.id.btnEditProfile);
         context =view.getContext();
@@ -269,6 +271,19 @@ public class ProfileFragment extends Fragment {
                     startActivity(intent);
                 }
 
+            }
+        });
+
+        ExamsHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (sessionManager.isLoggedIn()) {
+                    Intent intent = new Intent(getActivity(), RetriveExamsHistory.class);
+                    startActivity(intent);
+                }else{
+                    Intent intent = new Intent(getActivity(), LoginOrSignup.class);
+                    startActivity(intent);
+                }
             }
         });
         hireRequestStatus.setOnClickListener(new View.OnClickListener() {

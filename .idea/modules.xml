@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mrehya.iml" filepath="$PROJECT_DIR$/mrehya.iml" />
+      <module fileurl="file://D:\projects\ehya\mrehya_application\mrehya.iml" filepath="D:\projects\ehya\mrehya_application\mrehya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mrehya_application.iml" filepath="$PROJECT_DIR$/.idea/mrehya_application.iml" />
     </modules>
   </component>
 </project>
