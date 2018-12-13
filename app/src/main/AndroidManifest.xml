@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" package="com.mrehya">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mrehya">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -122,8 +123,9 @@
         <activity android:name=".Resume.ResumeBenefitsActivity" />
         <activity android:name=".Resume.ResumeViewActivity" />
         <activity android:name=".Exams.ExamResult" />
-        <activity android:name=".Exams.Result"/>
-        <activity android:name=".Exams.RetriveExamsHistory"/>
+        <activity android:name=".Exams.Result" />
+        <activity android:name=".Exams.RetriveExamsHistory" />
+        <activity android:name=".Reserv.ReservedTime"></activity>
     </application>
 
 </manifest>

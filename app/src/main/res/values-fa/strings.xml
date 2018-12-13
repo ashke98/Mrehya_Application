@@ -272,6 +272,7 @@
     <string name="ToCart"> سبد خرید</string>
     <string name="Buy">سفارش</string>
     <string name="ReserveRequestStatus">وقت های رزرو شده</string>
+    <string name="ExamsHistory">آزمون های انجام شده</string>
     <!--MAKE RESUMe-->
     <!--<string name="LastDegree">LastDegree</string>-->
     <string-array name="certificate_arrays">

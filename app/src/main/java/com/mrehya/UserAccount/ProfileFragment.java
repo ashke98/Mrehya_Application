@@ -48,6 +48,7 @@ import com.mrehya.Language;
 import com.mrehya.MainActivity;
 import com.mrehya.MyTextView;
 import com.mrehya.R;
+import com.mrehya.Reserv.ReservedTime;
 import com.mrehya.SessionManager;
 import com.mrehya.Shopping.ShowPurchase;
 import com.mrehya.UserAccount.LoginOrSignup;
@@ -137,7 +138,7 @@ public class ProfileFragment extends Fragment {
     private void setViews(){
         //Remaining apis
         LinearLayoutprofile4.setVisibility(View.GONE);
-        LinearLayoutprofileReserve.setVisibility(View.GONE);
+        //LinearLayoutprofileReserve.setVisibility(View.GONE);
         LinearLayoutprofile3.setVisibility(View.GONE);
 
         profname.setText(sessionManager.getUserDetails().getFirstname() + " " + sessionManager.getUserDetails().getLastname());
@@ -302,7 +303,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (sessionManager.isLoggedIn()) {
-                    Intent intent = new Intent(getActivity(), ShowHireStatus.class);
+                    Intent intent = new Intent(getActivity(), ReservedTime.class);
                     startActivity(intent);
                 }else{
                     Intent intent = new Intent(getActivity(), LoginOrSignup.class);
@@ -915,6 +916,7 @@ public class ProfileFragment extends Fragment {
             showPurchases.setGravity(Gravity.RIGHT|Gravity.CENTER);
             hireRequestStatus.setGravity(Gravity.RIGHT|Gravity.CENTER);
             ReserveRequestStatus.setGravity(Gravity.RIGHT|Gravity.CENTER);
+            ExamsHistory.setGravity(Gravity.RIGHT|Gravity.CENTER);
             btnEditProfile.setGravity(Gravity.RIGHT|Gravity.CENTER);
             //BtnInstagram.setGravity(Gravity.RIGHT|Gravity.CENTER);
             //btnTelegram.setGravity(Gravity.RIGHT|Gravity.CENTER);
@@ -947,6 +949,7 @@ public class ProfileFragment extends Fragment {
             showPurchases.setGravity(Gravity.LEFT|Gravity.CENTER);
             hireRequestStatus.setGravity(Gravity.LEFT|Gravity.CENTER);
             ReserveRequestStatus.setGravity(Gravity.LEFT|Gravity.CENTER);
+            ExamsHistory.setGravity(Gravity.LEFT|Gravity.CENTER);
             btnEditProfile.setGravity(Gravity.LEFT|Gravity.CENTER);
             //BtnInstagram.setGravity(Gravity.LEFT|Gravity.CENTER);
             //btnTelegram.setGravity(Gravity.LEFT|Gravity.CENTER);
@@ -958,12 +961,14 @@ public class ProfileFragment extends Fragment {
         showPurchases.setText(resources.getString(R.string.showPurchases));
         hireRequestStatus.setText(resources.getString(R.string.hireRequestStatus));
         ReserveRequestStatus.setText(resources.getString(R.string.ReserveRequestStatus));
+        ExamsHistory.setText(resources.getString(R.string.ExamsHistory));
         btnEditProfile.setText(resources.getString(R.string.EditProfile));
         BtnInstagram.setText(resources.getString(R.string.Instagram));
         btnTelegram.setText(resources.getString(R.string.Telegram));
         profileType.setText(resources.getString(R.string.profileType));
         mytextUserInfo.setText(resources.getString(R.string.UserInfo));
         mytextUserInfo2.setText(resources.getString(R.string.UserInfo2));
+
 
 
     }
